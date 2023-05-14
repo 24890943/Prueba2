@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        .navbar-title {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+    window.onload = function() {
+            document.getElementById("boton").addEventListener("click", comprar);
+        }
+
+        function comprar() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var num3 = parseInt(document.getElementById("num3").value);
+            var num4 = parseInt(document.getElementById("num4").value);
+            var num5 = parseInt(document.getElementById("num5").value);
+            var suma = num1+num2+num3+num4+num5;
+
+            alert("Has añadido  nuevo articulo: " + suma);
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <span class="navbar-title"><a class="navbar-brand" href="#">Navbar</a></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <span class="navbar-title"><a class="nav-link active" aria-current="page" href="#">Tienda</a></span>
+                        <span class="navbar-title"><a class="nav-link" href="#">Perros</a></span>
+                        <span class="navbar-title"><a class="nav-link" href="#">Gatos</a></span>
+                        <a class="nav-link disabled">Disabled</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <input type="button" value="Comprar" onclick="comprar();" id="boton" class="carrito">
+        </nav>
+    </header>
+
+    
+    <div class="image-container">
+        <main>
+            <img src="img1.png" class="image" width="300px" height="300" id="im">
+           
+            <button class="boton" value="comprar" onclick="comprar()">Comprar</button>
+            <input type="text" id="num1"><br>
+            <button onclick="showAlert()">detalle</button>
+
+    <script>
+        function showAlert() {
+            alert('¡has selecionado un articulo muy especial el cual tiene mucho detalle!');
+        }
+    </script>
+            
+            <img src="img2.png" class="image" width="300px" height="300" id="im">
+            <button onclick="showAlert()">detalle</button>
+            <button class="boton" value="comprar" onclick="comprar()"  id="boton">Comprar</button>
+            <input type="text" id="num2"><br>
+            
+            <img src="img3.jpg" class="image" width="300px" height="300" id="im">
+            <button onclick="showAlert()">detalle</button>
+            <input type="text" id="num3"><br>
+            <input type="button" value="Comprar" onclick="comprar();" id="boton"> 
+             
+            
+            <img src="imagen4.jpg" class="image" width="300px" height="300" id="im">
+            <button onclick="showAlert()">detalle</button>
+            <input type="text" id="num4"><br>
+            <button class="boton" value="comprar" onclick="comprar()">Comprar</button>
+            <script>
+                function showAlert1() {
+                    alert('¡has selecioonado un articulo muy especial el cual tiene mucho detalle!');
+                }
+            </script>
+            
+            <img src="imagen5.jpg" class="image" width="300px" height="300" id="im">
+            <button onclick="showAlert()">detalle</button>
+            <input type="text" id="num5"><br>
+            <button class="boton" value="comprar" onclick="comprar()">Comprar</button>
+            
+            <img src="imagen6.jpg" class="image" width="300px" height="300" id="im">
+            <button onclick="showAlert()">detalle</button>
+            <input type="text" id="num6"><br>
+            <button class="boton" value="comprar" onclick="comprar()">Comprar</button>
+            
+            <img src="imagen7.jpg" class="image" width="300px" height="300" id="im">
+            <button onclick="showAlert()">detalle</button>
+            <input type="text" id="num7"><br>
+         
+            <button class="boton" value="comprar" onclick="comprar()">Comprar</button>
+
+    </div>        
+        </main>
+    
+
+
+</body>
+</html>
