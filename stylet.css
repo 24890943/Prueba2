@@ -1,0 +1,79 @@
+.cinta{
+    background-color: rgb(142, 125, 219);
+}
+.menu{
+    padding: 20px;
+    cursor: alias;
+    margin: 10px;
+}
+
+.menu1{
+    color: rgb(52, 133, 204);
+    align-items: baseline;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image {
+  margin-right: 10px; /* Espacio entre las imágenes */
+
+    padding: 20px;
+    width: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.carrito{
+  display: flex;
+  justify-content: end;
+  margin: left auto;
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    color: rgb(234, 234, 241);
+    background-color: blueviolet;
+  }
+  .nav-link{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    color: rgb(234, 234, 241);
+    justify-content: center;
+    
+    justify-content: center;
+    margin-left: 10px;
+
+  }
+ .navbar navbar-expand-lg bg-body-tertiary{ align-items: center;
+    padding: 10px;}
+  
+  
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+
+  .texto{
+    color: aliceblue;
+  }
+  .boton{
+   
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .nav nav-tabs{
+    background-color: orangered;
+  }
+  .nav-item{
+    background-attachment: black;
+  }
+  .carrito{
+    width: 80px;
+    height: 30px;
+    justify-content:center;
+  }
